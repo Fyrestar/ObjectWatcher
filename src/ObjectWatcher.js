@@ -66,7 +66,7 @@ ObjectWatcher.prototype = {
 
 
     decimal: 2,
-    interval: 0,
+    interval: 10,
     frame: 0,
 
 
