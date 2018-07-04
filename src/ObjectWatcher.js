@@ -78,7 +78,7 @@ ObjectWatcher.prototype = {
         const style = this.element.style;
 
         switch ( position ) {
-            case 'leftTop':
+            case 'topLeft':
 
                 style.left = size;
                 style.top = size;
@@ -86,7 +86,7 @@ ObjectWatcher.prototype = {
                 style.bottom = 'initial';
 
                 break;
-            case 'rightTop':
+            case 'topRight':
 
                 style.left = 'initial';
                 style.top = size;
@@ -94,7 +94,7 @@ ObjectWatcher.prototype = {
                 style.bottom = 'initial';
 
                 break;
-            case 'leftBottom':
+            case 'bottomLeft':
 
                 style.left = size;
                 style.top = 'initial';
@@ -102,7 +102,7 @@ ObjectWatcher.prototype = {
                 style.bottom = size;
 
                 break;
-            case 'rightBottom':
+            case 'bottomRight':
 
                 style.left = 'initial';
                 style.top = 'initial';
