@@ -137,6 +137,7 @@ ObjectWatcher.prototype = {
 
 
             switch ( typeof value ) {
+                case 'string':
                 case 'array':
                 case 'object':
 
