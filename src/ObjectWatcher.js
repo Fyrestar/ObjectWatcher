@@ -1,4 +1,7 @@
 
+// ObjectWatcher by Mevedia
+// https://mevedia.com
+
 function ObjectWatcher() {
 
 
@@ -63,15 +66,15 @@ ObjectWatcher.prototype = {
 
 
     decimal: 2,
-    interval: 10,
-    time: 0,
+    skip: 10,
+    frame: 0,
 
 
 
     place: function(position, size) {
 
         size = size || '1em';
-        
+
         const style = this.element.style;
 
         switch ( position ) {
@@ -213,11 +216,11 @@ ObjectWatcher.prototype = {
 
     update: function() {
 
-        this.time ++ ;
+        this.frame ++ ;
 
-        if ( this.time > this.interval ) {
+        if ( this.frame > this.interval ) {
 
-            this.time = 0;
+            this.frame = 0;
 
 
             for ( let i = 0, l = this.groups.length; i < l; i ++ ) {
