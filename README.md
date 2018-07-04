@@ -10,3 +10,14 @@ const watcher = new ObjectWatcher;
 
 watcher.add('THREE Memory', renderer.info.memory);
 ```
+In your render frame call:
+
+```
+watcher.update();
+```
+
+Place it in desired corner of the screen with:
+
+```
+watcher.place('bottomLeft'); // topLeft, topRight, bottomLeft, bottomRight
+```
