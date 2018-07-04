@@ -5,9 +5,6 @@ Display object number-properties in realtime, multiple objects can be tracked. F
 
 
 Pseudo-code example:
-`
-const watcher = new ObjectWatcher;
+`const watcher = new ObjectWatcher;
 
-watcher.add('THREE Memory', renderer.info.memory);
-
-`
+watcher.add('THREE Memory', renderer.info.memory);`
