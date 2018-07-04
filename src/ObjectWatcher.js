@@ -55,7 +55,7 @@ function ObjectWatcher() {
 
     const head = document.head || document.getElementsByTagName('head')[0];
 
-    const element = file.element || document.createElement('style');
+    const element = document.createElement('style');
     element.appendChild(document.createTextNode(css));
 
     head.insertBefore(element, head.firstChild);
