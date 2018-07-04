@@ -158,6 +158,7 @@ ObjectWatcher.prototype = {
             field.label.textContent = name;
             field.label.className = 'label';
 
+            field.content.textContent = field.value;
 
             field.container.appendChild(field.label);
             field.container.appendChild(field.content);
